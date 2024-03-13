@@ -64,7 +64,7 @@ table tr td{
 }
 form{
     padding: 10px 10px 10px 10px;
-    position: relative;
+    align-items: center;
     text-align: center;
     font-weight: bolder;
     color: white;

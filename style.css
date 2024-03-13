@@ -20,7 +20,7 @@ body{
         background-position-x: center;
     }
     textarea{
-        width: 80%;
+        margin-right:10px;
     }
 }
 table{

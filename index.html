@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Semana Ignaciana</title>
-</head>
-<body>
-    <header>
-        <table>
-            <tr>
-                <td><span>EVALÚA A TU COMPAÑERO</span></td>
-            </tr>
-        </table>
-    </header>
-    <div class="formulario">
-        <form method="post">
-            <label for="compañero">Compañero</label>
-            <select name="compañero" id="compañero">
-                <option value="" disabled selected>Selecciona un compañero</option>
-                <option value="" >Fernando José</option>
-            </select>
-            <label for="">Categoría</label>
-            <select>
-                <option value="" disabled selected>Selecciona una categoria</option>
-            </select>
-            <label for="momento">Momento</label>
-            <input type="text" id="momento">
-            <label for="">Descripción</label>
-            <textarea placeholder="Escribe el momento aquí" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit">
-        </form>
-    </div>
-</body>
+<html lang="es">   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Proyecto</title>
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr>
+                    <td><span>EVALÚA A TU COMPAÑERO</span></td>
+                </tr>
+            </table>
+        </header>
+        <div class="explicacion">
+            <p>Evalúa a tus compañeros de una manera que todo sea positivo. Si quieres ver las
+                categorías y lo que significa cada una haz click ⮕<a href="categoria.html">AQUÍ</a>⬅
+                o en la palabra CATEGORIA en el formulario.
+            </p>
+        </div>
+        <div class="formulario">
+            <form action="recoger.php" method="post">
+                <label for="compañero" class="compa">Compañero</label>
+                <select name="companero" id="compañero">
+                    <option value="0" selected disable hidden>Selecciona una opción</option>
+                    <option value="1">Angel</option>
+                    <option value="2">Alberto</option>
+                    <option value="3">Celia</option>
+                    <option value="4">Fernando</option>
+                    <option value="5">Alejandro</option>
+                    <option value="6">Juan Carlos</option>
+                    <option value="7">Jose Luis</option>
+                    <option value="8">Rafa</option>
+                    <option value="9">Adrian</option>
+                    <option value="10">Pablo</option>
+                </select>
+                <label for="categoria" class="cate"><a href="categoria.html">⮕Categoría⬅</a></label>
+                <select id="categoria" name="categoria">
+                    <option value="0" selected disable hidden>Selecciona una opción</option>
+                    <option value="1">Liderazgo</option>
+                    <option value="2">Solidaridad</option>
+                    <option value="3">Humildad</option>
+                    <option value="4">Honestidad</option>
+                    <option value="5">Creatividad</option>
+                    <option value="6">Proactividad</option>
+                </select>
+                <label for="momento">Momento</label>
+                <input type="text" id="momento" name="momento">
+                <label for="">Descripción</label>
+                <textarea placeholder="Escribe el momento aquí" name="descripcion" id="" cols="30" rows="10"></textarea>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
 </html>
